@@ -1,0 +1,92 @@
+nav
+{
+	position: absolute;
+	height: 100%;
+	width: 15%;
+	background-color: #333;
+}
+#admin_panel
+{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#admin_panel li
+{
+	display: block;
+	float: none;
+	width: 100%;
+}
+#admin_panel li a
+{
+	text-align: left;
+	font-size: 1.5vw;
+}
+
+#last
+{
+	margin-bottom: 1000%;
+}
+#user_data
+{
+	background-color: white;
+	border: solid black 3px;
+	border-radius: 10px;
+	overflow: auto;
+	position: absolute;
+	width: 30%;
+	height: 10%;
+	top: 50%;
+	left: 35%;
+	padding: 15px 15px 15px 15px;
+}
+#user_data li
+{
+	float: none;
+	color: black;
+}
+#user_control
+{
+	display: flex;
+	flex-direction: column; 
+}
+#grade_modif
+{
+	position: absolute;
+	display: block;
+	width: 10%;
+	top: 65%;
+	left: 45%;
+}
+.crea {
+	position: relative;
+	top: 10%;
+	left: 25%;
+}
+.modif {
+	position: relative;
+	top: 10%;
+	left: 25%;
+}
+#exists
+{
+	position: absolute;
+	text-align: center;
+	width: 30%;
+	height: 10%;
+	top: 50%;
+	left: 35%;
+	padding: 15px 15px 15px 15px;
+}
+table
+{
+	position: absolute;
+	width: 60%;
+	left: 20%;
+	top: 15%;
+	margin-top: 30px;
+}
+td
+{
+	text-align: center;
+}

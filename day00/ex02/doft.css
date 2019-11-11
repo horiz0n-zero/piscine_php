@@ -1,0 +1,28 @@
+body {
+	background-color: #505050;
+}
+
+.shape {
+	border-radius: 15px;
+	background-color: 909090;
+	box-shadow: 20px 20px 15px #000000;
+}
+
+.lefticon {
+	width: 48%;
+}
+.righticon {
+	width: 50%;
+}
+.brick {
+	width: 32px;
+	height: 32px;
+	background:url(./resources/brick.jpg);
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+.repeat {
+	background-repeat: repeat;
+	background: url(./resources/brick.jpg);
+}

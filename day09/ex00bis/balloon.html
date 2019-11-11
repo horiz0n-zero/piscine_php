@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="square" style="width: 200px; height: 200px; border-radius: 100px; background-color: red;"> </div>
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+				var size = 200;
+				var colors = ['red', 'green', 'blue'];
+
+				$("#square").click(function(){
+					if (size >= 420) {
+						size = 100;
+						$("#square").css({
+
+						});
+						return ;
+					}
+
+				});
+				$("#square").mouseout(function(){
+
+				});
+			});
+		</script>
+	</body>
+</html>

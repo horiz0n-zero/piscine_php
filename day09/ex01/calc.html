@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+			function submitTapped() {
+				left = document.getElementById('left');
+				rigth = document.getElementById('rigth');
+				operator = document.getElementById('operator');
+
+				l = parseInt(left.value);
+				r = parseInt(rigth.value);
+				o = operator.value;
+				if (!isNaN(l) && !isNaN(r) && l >= 0 && r >= 0) {
+					if ((o == "/" || o == "%") && !l || !r) {
+						window.console.log("It's over 9000!");
+						return alert("It's over 9000!");
+					}
+					if (o == "+") {
+						window.console.log(l + r);
+						window.alert(l + r);
+					}
+					else if (o == "-") {
+						window.console.log(l - r);
+						window.alert(l - r);
+					}
+					else if (o == "*") {
+						window.console.log(l * r);
+						window.alert(l * r);
+					}
+					else if (o == "/") {
+						window.console.log(l / r);
+						window.alert(l / r);
+					}
+					else {
+						window.console.log(l % r);
+						window.alert(l % r);
+					}
+				}
+				else {
+					alert('Error :(');
+				}
+			}
+		</script>
+	</head>
+	<body>
+			<input type="TEXT" id=left>
+			<select id="operator" id="pet-select">
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+				<option value="%">%</option>
+			</select>
+			<input type="TEXT" id=rigth>
+			<input type="submit" value="Try me!" onclick="submitTapped()">
+	</body>
+</html>

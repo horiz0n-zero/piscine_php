@@ -1,0 +1,116 @@
+body {
+	background-color: rgba(255, 200, 57, 0.2);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0, 18, 25);
+  border-radius: 8px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+#menu-deroulant, #menu-deroulant ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#menu-deroulant {
+    text-align: center;
+}
+#menu-deroulant li {
+    /*background-color: blue;*/
+    display: inline-block;
+    width: 15%px;
+
+}
+/*
+#menu-deroulant ul:hover {
+
+}
+
+#menu-deroulant li:hover {
+    color : rgba(0, 18, 25, 0.90);
+}*/
+
+#menu-deroulant ul li {
+    color: black;
+    background-image: linear-gradient(to bottom, rgba(0, 18, 25, 1.0), rgba(0, 18, 25, 0.95));
+}
+#menu-deroulant a {
+    text-decoration: none;
+    display: block;
+}
+#menu-deroulant ul {
+    position: absolute;
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+}
+#menu-deroulant li:hover ul {
+    left: auto;
+}
+#right
+{
+  float: right;
+  color: white;
+  position: absolute;
+  top: -0.5%;
+  right: -0.5%;
+  margin: 0;
+  padding: 0;
+  padding: 14px 16px;
+  text-align: center;
+  width: 5%;
+}
+#right:hover a
+{
+  left: 100%;
+  background-color: #333;
+  background-image: none;
+  color: white;
+}
+#li_search
+{
+  width: 50%;
+  border-radius: 16px;
+  top: 0.5%;
+  right: 6%;
+  margin: auto;
+}
+#search_bar
+{
+  display: flex;
+  padding: 14px 16px;
+}
+#search
+{
+  width: 90%;
+}
+#search_button
+{
+  display: block;
+  text-align: center;
+  position: relative;
+}
+
+#trouve {
+  text-align: center;
+  position: relative;
+  color: white;
+}

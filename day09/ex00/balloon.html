@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+			function clickEvent() {
+				element = document.getElementById("square");
+				size = parseInt(element.style.width);
+				if (size >= 420) {
+					element.style.width = "100px";
+					element.style.height = element.style.width;
+					element.style.borderRadius = "50px";
+					return ;
+				}
+				element.style.width = (size + 10).toString() + "px";
+				element.style.height = element.style.width;
+				element.style.borderRadius = (size / 2).toString() + "px";
+				if (element.style.backgroundColor == "red")
+					element.style.backgroundColor = "green";
+				else if (element.style.backgroundColor == "green")
+					element.style.backgroundColor = "blue";
+				else
+					element.style.backgroundColor = "red";
+			}
+			function outEvent() {
+				element = document.getElementById("square");
+				size = parseInt(element.style.width) - 5;
+				if (size < 200) {
+					return ;
+				}
+				element.style.width = size.toString() + "px";
+				element.style.height = element.style.width;
+				element.style.borderRadius = (size / 2).toString() + "px";
+				if (element.style.backgroundColor == "red")
+					element.style.backgroundColor = "blue";
+				else if (element.style.backgroundColor == "blue")
+					element.style.backgroundColor = "green";
+				else
+					element.style.backgroundColor = "red";
+			}
+		</script>
+	</head>
+	<body>
+		<div id="square" onmouseout="outEvent()" onclick="clickEvent()" style="width: 200px; height: 200px; border-radius: 100px; background-color: red;"> </div>
+	</body>
+</html>

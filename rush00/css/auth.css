@@ -1,0 +1,45 @@
+#body
+{
+	width: 20%;
+	height: 20%;
+	border: solid black 5px;
+	border-radius: 15px;
+	position: absolute;
+	top: 25%;
+	left: 40%;
+}
+form
+{
+	position: relative;
+	width: 70%;
+	top: 10%;
+	left: 15%;
+	margin-bottom: 10%;
+}
+.input
+{
+	position: relative;
+	width: 100%;
+}
+.submit
+{
+	width: 100%;
+}
+.login_a
+{
+	font-size: 0.8em;
+	display: inline;
+	text-align: center;
+	position: relative;
+	width: 50%;
+	top: 25%;
+	left: 25%;
+}
+#modify
+{
+	position: relative;
+	display: block;
+	width: 100%;
+	top: 30%;
+	text-align: center;
+}
